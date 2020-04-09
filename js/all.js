@@ -1,5 +1,3 @@
-var list={};
-
 list.menuData=[
   {
     title:"文件(F)",

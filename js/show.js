@@ -1,5 +1,7 @@
+var list={};
+
 $(function(){
-  $menubar.show(list.$menuData);
+  $menubar.show(list.menuData);
   $menubar.init();
   $editor.show();
 })
