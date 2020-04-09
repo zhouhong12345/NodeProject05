@@ -23,7 +23,7 @@ module.exports=function(grunt){
         dest:'dist/bundle.js'
       },
       css:{
-        src:['js/*.css','./total/**/*.css'],
+        src:['./all.css','./total/**/*.css'],
         dest:'dist/bundle.css'
       }
     },
