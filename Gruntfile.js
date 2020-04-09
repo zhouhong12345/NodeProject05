@@ -11,16 +11,12 @@ module.exports=function(grunt){
         dest:'dist/index.html'
       }
     },
-
-
     copy:{
       html:{
         src:'./index.html',
         dest:'./dist/index.html'
       }
     },
-
-
     concat:{
       js:{
         src:['./all.js','./total/**/*.js'],
