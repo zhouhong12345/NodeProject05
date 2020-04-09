@@ -15,23 +15,15 @@ module.exports=function(grunt){
       html:{
         src:'./index.html',
         dest:'./dist/index.html'
-      },
-      js:{
-        src:['./menubar/menubar.js','./Font/font.js','./editor/editor.js','./all.js'],
-        dest:['./dist/menubar/menubar.js','./dist/Font/font.js','./dist/editor/editor.js','./dist/all.js']
-      },
-      css:{
-        src:['./all.css','./menubar/menubar.css','./editor/editor.css','./Font/font.css'],
-        dest:['./dist/menubar/menubar.css','./dist/Font/font.css','./dist/editor/editor.css','./dist/all.css']
       }
     },
     concat:{
       js:{
-        src:['./dist/menubar/menubar.js','./dist/Font/font.js','./dist/editor/editor.js','./dist/all.js'],
+        src:['./all.js','./total/**/*.js'],
         dest:'dist/bundle.js'
       },
       css:{
-        src:['./dist/all.css','./dist/menubar/menubar.css','./dist/editor/editor.css','./dist/Font/font.css'],
+        src:['./all.css','./total/**/*.css'],
         dest:'dist/bundle.css'
       }
     },
@@ -49,6 +41,6 @@ module.exports=function(grunt){
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('release',['copy','concat','uglify','cssmin','htmlmin']);
+  grunt.registerTask('release',['copy','concat','htmlmin','uglify','cssmin']);
 
 };
