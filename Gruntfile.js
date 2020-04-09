@@ -19,11 +19,11 @@ module.exports=function(grunt){
     },
     concat:{
       js:{
-        src:['./all.js','./total/**/*.js'],
+        src:['js/*.js','./total/**/*.js'],
         dest:'dist/bundle.js'
       },
       css:{
-        src:['./all.css','./total/**/*.css'],
+        src:['js/*.css','./total/**/*.css'],
         dest:'dist/bundle.css'
       }
     },
