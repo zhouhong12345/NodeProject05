@@ -36,6 +36,15 @@ module.exports=function(grunt){
     },
     cssmin:{
       'dist/bundle.css':'dist/bundle.css'
+    },
+    useminPrepare:{
+      html:'index.html',
+      options:{
+        dest:'dist'
+      }
+    },
+    usemin:{
+      html:['dist/index.html']
     }
   });
 
@@ -45,6 +54,6 @@ module.exports=function(grunt){
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('release',['copy:html','concat','uglify','cssmin','htmlmin']);
+  grunt.registerTask('release',['copy:html','concat','uglify','cssmin','usemin','htmlmin']);
 
 };
