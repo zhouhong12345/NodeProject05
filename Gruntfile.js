@@ -28,10 +28,10 @@ module.exports=function(grunt){
       }
     },
     uglify:{
-      'dist/bundle.js':'dist/bundle.js'
+      'dist/bundle.min.js':'dist/bundle.js'
     },
     cssmin:{
-      'dist/bundle.css':'dist/bundle.css'
+      'dist/bundle.min.css':'dist/bundle.css'
     },
     useminPrepare:{
       html:'index.html',
