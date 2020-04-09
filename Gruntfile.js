@@ -41,6 +41,9 @@ module.exports=function(grunt){
     },
     usemin:{
       html:['dist/index.html']
+    },
+    clean:{
+      end:['dist/bundle.css','dist/bundle.js','.tmp']   
     }
   });
 
@@ -49,8 +52,9 @@ module.exports=function(grunt){
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-usemin');
 
-  grunt.registerTask('release',['copy','concat','uglify','cssmin','usemin','htmlmin']);
+  grunt.registerTask('release',['copy','concat','uglify','cssmin','usemin','htmlmin','clean:end']);
 
 };
