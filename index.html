@@ -3,21 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>文本编辑器</title>
+  <!--build:css afterbundle.css -->
   <link rel="stylesheet" href="./editor/editor.css">
   <link rel="stylesheet" href="./menubar/menubar.css">
   <link rel="stylesheet" href="./Font/font.css">
   <link rel="stylesheet" href="./all.css">
-  <link rel="">
+  <!--endbuild-->
 </head>
 <body>
   <div class="all"></div>
 </body>
+<!--build:js afterbundle.js-->
 <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="./all.js"></script>
 <script src="./editor/editor.js"></script>
 <script src="./menubar/menubar.js"></script>
 <script src="./Font/font.js"></script>
-
+<!--endbuild-->
 <script>
 $(function(){
   $menubar.show(list.menuData);
