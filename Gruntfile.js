@@ -11,12 +11,16 @@ module.exports=function(grunt){
         dest:'dist/index.html'
       }
     },
+
+
     copy:{
       html:{
         src:'./index.html',
         dest:'./dist/index.html'
       }
     },
+
+
     concat:{
       js:{
         src:['./all.js','./total/**/*.js'],
@@ -41,6 +45,6 @@ module.exports=function(grunt){
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('release',['copy','concat','uglify','cssmin','htmlmin']);
+  grunt.registerTask('release',['copy:html','concat','uglify','cssmin','htmlmin']);
 
 };

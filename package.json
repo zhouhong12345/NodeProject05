@@ -5,15 +5,14 @@
   "main": "all.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
-    //"build": "grunt build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhouhong12345/NodeProject05.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "zhouhong12345",
+  "license": "  MIT",
   "bugs": {
     "url": "https://github.com/zhouhong12345/NodeProject05/issues"
   },
