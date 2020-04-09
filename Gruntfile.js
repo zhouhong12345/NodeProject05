@@ -28,10 +28,10 @@ module.exports=function(grunt){
       }
     },
     uglify:{
-      'dist/afterbundle.js':'bundle.js'
+      'dist/bundle.js':'dist/bundle.js'
     },
     cssmin:{
-      'dist/afterbundle.css':'bundle.css'
+      'dist/bundle.css':'dist/bundle.css'
     }
   });
 
@@ -41,6 +41,6 @@ module.exports=function(grunt){
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('release',['copy','concat','htmlmin','uglify','cssmin']);
+  grunt.registerTask('release',['copy','concat','uglify','cssmin','htmlmin']);
 
 };
