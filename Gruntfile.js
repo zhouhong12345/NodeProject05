@@ -15,19 +15,11 @@ module.exports=function(grunt){
       html:{
         src:'./index.html',
         dest:'./dist/index.html'
-      },
-      js:{
-        src:['./total/**/*.js'],
-        dest:['dist/total/**/*.js']
-      },
-      js:{
-        src:['./js/*.js'],
-        dest:['dist/js/*.js']
       }
     },
     concat:{
       js:{
-        src:['./dist/js/*.js','./dist/total/**/*.js'],
+        src:['js/*.js','./total/**/*.js'],
         dest:'dist/bundle.js'
       },
       css:{
