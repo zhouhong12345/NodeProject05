@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>文本编辑器</title>
-  <link rel="stylesheet" href="./total/editor/editor.css">
-  <link rel="stylesheet" href="./total/menubar/menubar.css">
-  <link rel="stylesheet" href="./total/Font/font.css">
-  <link rel="stylesheet" href="./all.css">
+  <!--build:css dist/bundle.min.css-->
+    <link rel="stylesheet" href="./total/editor/editor.css">
+    <link rel="stylesheet" href="./total/menubar/menubar.css">
+    <link rel="stylesheet" href="./total/Font/font.css">
+    <link rel="stylesheet" href="./all.css">
+  <!--endbuild-->
 </head>
 <body>
   <div class="all"></div>
 </body>
-<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="./all.js"></script>
-<script src="./total/editor/editor.js"></script>
-<script src="./total/menubar/menubar.js"></script>
-<script src="./total/Font/font.js"></script>
+<!--build:js dist/bundle.min.js-->
+  <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./all.js"></script>
+  <script src="./total/editor/editor.js"></script>
+  <script src="./total/menubar/menubar.js"></script>
+  <script src=". /total/Font/font.js"></script>
+<!--endbuild-->
 <script>
 $(function(){
   $menubar.show(list.menuData);
