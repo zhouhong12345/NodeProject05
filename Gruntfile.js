@@ -17,8 +17,12 @@ module.exports=function(grunt){
         dest:'./dist/index.html'
       },
       js:{
-        src:['./total/**/*.js','./js/*.js'],
-        dest:['dist/total/**/*.js','dist/js/*.js']
+        src:['./total/**/*.js'],
+        dest:['dist/total/**/*.js']
+      },
+      js:{
+        src:['./js/*.js'],
+        dest:['dist/js/*.js']
       }
     },
     concat:{
