@@ -15,11 +15,15 @@ module.exports=function(grunt){
       html:{
         src:'./index.html',
         dest:'./dist/index.html'
+      },
+      js:{
+        src:['./total/**/*.js','./js/*.js'],
+        dest:['dist/total/**/*.js','dist/js/*.js']
       }
     },
     concat:{
       js:{
-        src:['js/*.js','./total/**/*.js'],
+        src:['./dist/js/*.js','./dist/total/**/*.js'],
         dest:'dist/bundle.js'
       },
       css:{
@@ -51,6 +55,6 @@ module.exports=function(grunt){
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-usemin');
 
-  grunt.registerTask('release',['copy:html','concat','uglify','cssmin','usemin','htmlmin']);
+  grunt.registerTask('release',['copy','concat','uglify','cssmin','usemin','htmlmin']);
 
 };
